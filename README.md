@@ -13,6 +13,7 @@ This application predicts future stock prices using a Long Short-Term Memory (LS
 - **React Frontend**: Interactive and dynamic user interface developed with React, providing a seamless experience.
 - **React Query**: Efficient data fetching and state management in the frontend, ensuring real-time updates and improved performance.
 - **Tailwind CSS**: A utility-first CSS framework used to create a responsive and modern design, enhancing the app's visual appeal and usability.
+- **BDSahre API**: An API to get daily share market updates of Dhaka Stock Exchange.
 
 ## Getting Started
 
