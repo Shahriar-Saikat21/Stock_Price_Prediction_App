@@ -9,9 +9,13 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.models import load_model # type: ignore
 
-model = load_model('../ML_Model/model_EHL.h5')
-model_1 = load_model('../ML_Model/model_ACI.h5')
-model_2 = load_model('../ML_Model/model_ABBANK.h5')
+from django.conf import settings
+import os
+value = settings.BASE_DIR
+
+model = load_model(os.path.join(value,'ML_Model/model_EHL.h5'))
+model_1 = load_model(os.path.join(value,'ML_Model/model_ACI.h5'))
+model_2 = load_model(os.path.join(value,'ML_Model/model_ABBANK.h5'))
 
 def prediction(company,today,last_Date):
     df = get_current_trade_data(company) 
